@@ -1,0 +1,131 @@
+/*Copyright (C) 2017  Matthew Richardson
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/*
+ * Huge thanks to the following for their inspiration/guidance:
+ * http://www.linnhe2.free-online.co.uk/thunderbird/chrome.html - For a very comprehensive guide to userChrome.css
+ * https://monterail.com/blog/2016/the-power-of-email-clients-why-did-we-redesign-thunderbird?utm_source=Thunderbird&utm_campaign=Dribbble&utm_medium=blogpost%22 - For the initial inspiration to do this 
+ * http://www.omgubuntu.co.uk/2017/04/stunning-thunderbird-redesign-mockup - For alerting me to the beautiful mockup by monterail.com
+*/
+
+@import "_base.css";
+@import "../tweaks/tag.css";
+
+/* Select icon theme (leave commented to use default for the selected theme)*/
+/* @import "../icons/lightIcons.css"; /*For dark Folder Tree and Message List*/
+/* @import "../icons/lightDarkIcons.css"; /*For dark Folder Tree, with a light Message List*/
+@import "../icons/darkIcons.css"; /*For light Folder Tree and Message List*/
+
+/**** Variables: Uncomment and Edit these for easy customisation ****/
+
+:root {
+	
+ /*---- General Options ----*/
+  --light-color: #EFF0F1;
+  --light-text-color: #39394c;
+  --light-white-background: white;
+  --light-light-background: var(--light-color);
+  --light-light-text-color: var(--light-text-color);
+  
+  /*** Set active tab background color: ***/
+  --fgTabBackgroundColor: var(--light-light-background) !important;
+  
+  --menu-text-color: var(--light-text-color);
+
+  /*** These highlight colors are used if more specific ones aren't specified below ***/
+  --highlight-color: #78b6e2;
+  --full-highlight-color: #0070ff;
+  --highlight-text-color: #6a6a6a;
+  --gen-text-color: #39394c;  
+  --alt-highlight-text-color: #ffffff;
+  
+  /*---- Tree Views (Folder Tree/Message List) General Options ----
+  --tree-row-highlight-background-color: var(--highlight-color);
+  --tree-row-highlight-text-color: var(--highlight-text-color); */
+  
+  /*---- Folder Tree ----*/
+  --folder-tree-background-color: #e0e0ea;
+  --folder-tree-text-color: var(--highlight-text-color);
+  --dark-folder-tree-text-color: var(--folder-tree-text-color);
+  --folder-tree-row-height: 20px;
+  --folder-tree-highlight-background-color: var(--highlight-color);
+  --folder-tree-highlight-text-color: var(--alt-highlight-text-color);
+  
+  /*---- Message List ----*/
+  --message-list-header-background-color: #e0e0ea;
+  --message-list-header-text-color: var(--gen-text-color);
+  --message-list-background-color: #fafaff;
+  --message-list-text-color: var(--gen-text-color);
+  --message-list-row-height: 25px;
+  --message-list-highlight-background-color: var(--highlight-color);
+  --message-list-highlight-text-color: var(--alt-highlight-text-color);
+  --message-list-unread-text-color: var(--highlight-text-color);
+  --message-list-unread-background-color: #e9ffe9;
+  --message-list-replied-text-color: var(--gen-text-color);
+  --message-list-replied-background-color: #fffae7;
+  --message-list-read-text-color:  var(--gen-text-color);
+  --message-list-read-background-color: #fffffa;
+
+  /*---- Message Filter Bar ----*/  
+  --filter-bar-background-color:  #e0e0e7;
+  
+  /*---- Scollbar ----*/
+/*  --scrollbar-thumb-color: rgba(127,127,127,0.5);
+  --scrollbar-thumb-hover-color: var(--highlight-color); */
+  
+  /*---- Message Headers (To/Subject/From etc) ----*/
+  --subject-line-font-size: 120%;
+  --headers-background-color: #e0e0ea;
+  --headers-text-color: #444444;
+  --notification-background-color: #ffeced;
+}
+
+/******************************************************/
+resizer { 
+	-moz-appearance: none !important;
+}
+
+#folderTree {
+	-moz-appearance: var(--folder-tree-appearance, none) !important;
+	color: var(--dark-folder-tree-text-color) !important;
+}
+
+body {
+	background-color: var(--message-list-background-color) !important;
+}
+
+menu label, menuitem label, .splitmenu-menuitem label, menucaption label,
+.chromeclass-toolbar menu label, .chromeclass-toolbar menuitem label, .chromeclass-toolbar .splitmenu-menuitem label, .chromeclass-toolbar menucaption label {
+	color: var(--light-light-text-color) !important;
+}
+
+menupopup {
+	-moz-appearance: none !important;
+	background: var(--light-light-background) !important;
+	border: 1px solid #a0a0a0;
+	border-radius: 4px !important;
+}
+
+menuseparator {
+	-moz-appearance: none !important;
+	background: var(--light-text-color) !important;
+	border-bottom-width: 1px !important;
+	border-bottom-color: lightgrey !important;
+	border-bottom-style: solid !important;
+}
+
+
+

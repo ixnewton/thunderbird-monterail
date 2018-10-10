@@ -16,7 +16,9 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-@font-face {
+/* Disabled to allow system fornt configuration to show */
+
+/*@font-face {
     font-family: 'LightSans';
     src: url('../fonts/encodesansnarrow-light.woff2') format('woff2'),
          url('../fonts/encodesansnarrow-light.woff') format('woff'),
@@ -24,18 +26,20 @@
          url('../fonts/encodesansnarrow-light.svg#encode_sans_narrowlight') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
-:root {
+/*:root {
 	--system-font: initial;
 	--light-sans-font: LightSans;
 	--default-font: var(--light-sans-font);
 	--folder-tree-appearance: none;
-}
+} 
 
 * {
 	font-family: var(--default-font);
 }
+
+*/
 
 #mail-toolbar-menubar2,
 #mail-bar3
@@ -54,8 +58,8 @@
 }
 
 toolbar > toolbarbutton {
-	margin-right: 10px !important;
-	margin-left: 10px !important;
+	margin-right: 3px !important;
+	margin-left: 3px !important;
 }
 
 box, hbox, vbox, toolbox {
@@ -77,6 +81,15 @@ menu[disabled="true"] label, menuitem[disabled="true"] label, .splitmenu-menuite
 .chromeclass-toolbar menu[disabled="true"] label, .chromeclass-toolbar menuitem[disabled="true"] label, .chromeclass-toolbar .splitmenu-menuitem[disabled="true"] label, .chromeclass-toolbar menucaption[disabled="true"] label {
   color: grey !important;
 }
+.chromeclass-status {
+	-mz-appearance: none !important;
+	background: var(--filter-bar-background-color) !important;
+	border-top: 0px;
+}
+
+#status-bar:-moz-lwtheme {
+    border-top: 1px solid rgba(127,127,127,0.2) !important;
+}
 
 /****** General Tree Views *****/
 treechildren::-moz-tree-row(selected) {
@@ -93,6 +106,12 @@ treechildren:-moz-tree-twisty {
 	-moz-image-region: rect(0px 12px 12px 0px) !important;
 	-moz-appearance: none !important;
 	list-style-type: image !important;
+}
+
+/****** Filter Bar *****/
+#quick-filter-bar-main-bar { 
+	background: var(--filter-bar-background-color) !important;
+	padding: 0px !important;
 }
 
 #folderTree {
@@ -113,6 +132,7 @@ treechildren:-moz-tree-twisty {
 
 #folderTree > treechildren::-moz-tree-row {
 	margin-top: 5px !important;
+
 }
 
 #folderTree > treechildren::-moz-tree-row {
@@ -131,7 +151,7 @@ treechildren:-moz-tree-twisty {
 #folderTree > treechildren::-moz-tree-cell-text(folderNameCol, newMessages-true),
 #folderTree > treechildren::-moz-tree-cell-text(folderNameCol, closed, subfoldersHaveUnreadMessages-true) {
 	color: inherit !important;
-	font-style: italic !important;
+	/* font-style: italic !important; */
 }
 
 /***** Thread tree *****/
@@ -151,13 +171,71 @@ treechildren:-moz-tree-twisty {
 }
 
 #threadTree > treechildren::-moz-tree-row(selected) {
-	border: none !important;
 	background: var(--message-list-highlight-background-color) !important;
 }
 
 #threadTree > treechildren::-moz-tree-cell-text(selected) {
 	color: var(--message-list-highlight-text-color) !important;
+	font-weight: 500;
 }
+
+/******* Change colors of unread messages *********/
+#threadTree > treechildren:-moz-tree-cell-text(unread) {
+	color: var(--message-list-unread-text-color) !important;
+	font-weight: 600;
+}
+
+#threadTree > treechildren::-moz-tree-cell(unread) {
+	background-color: var(--message-list-unread-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(unread,selected) {
+	background-color: var(--message-list-highlight-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(unread,selected) {
+	color: var(--message-list-highlight-text-color) !important;
+	font-weight: 600;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(read,selected) {
+	color: var(--message-list-highlight-text-color) !important;
+}
+
+/******** Change colors of replied messages *********/
+#threadTree > treechildren:-moz-tree-cell-text(replied) {
+	color: var(--message-list-replied-text-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(replied) {
+	background-color: var(--message-list-replied-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(replied,selected) {
+	background-color: var(--message-list-highlight-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(replied,selected) {
+	color: var(--message-list-highlight-text-color) !important;
+}
+
+/*
+#threadTree > treechildren:-moz-tree-cell-text(imapsent) {
+    color: var(--message-list-sent-text-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(imapsent) {
+    background-color: var(--message-list-sent-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(imapsent,selected) {
+    background-color: var(--message-list-highlight-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(imapsent,selected) {
+    color: var(--message-list-highlight-text-color) !important;
+}
+*/
 
 #threadCols, #threadCols treecol, #threadCols treecolpicker {
 	-moz-appearance: none !important;
@@ -188,7 +266,8 @@ treechildren:-moz-tree-twisty {
 	-moz-appearance: none !important;
 }
 
-scrollbar {
+/* Disabled scrollbar to allow KDE Breeze styling through */ 
+/* scrollbar {
 	margin-right: 5px !important;
 	width: 10px !important;
 	max-width:10px !important;
@@ -208,7 +287,7 @@ slider {
 	-moz-appearance: none !important;
 	background: none !important;
 	border: none !important;
-}
+} 
 
 thumb {
 	width: 10px !important;
@@ -217,31 +296,81 @@ thumb {
 	min-height: 100px !important;
 	border: none !important;
 	background: var(--scrollbar-thumb-color) !important;
-}
+} 
 
 thumb:hover {
 	background: var(--scrollbar-thumb-hover-color) !important;
-}
+} */
 
 #msgHeaderView {
+	-moz-appearance: none !important;
 	color: var(--headers-text-color) !important;
 	background-color: var(--headers-background-color) !important;
 	border-bottom: 1px solid rgba(0,0,0,0.25) !important;
+	padding-bottom: 4px !important;
 }
 
 .msgHeaderView-button {
+	-moz-appearance: none !important;
 	min-width: 0px !important;
-	border-color: transparent !important;
-	background-color:transparent !important;
+	border: none !important;
+	background-color: transparent !important;
 	margin: 0px !important;
 }
 
-.msgHeaderView-button:hover {
-	border-color: rgba(0,0,0,0.25) !important;
+.toolbarbutton-1.msgHeaderView-button, .toolbarbutton-1.msgHeaderView-button > .toolbarbutton-menubutton-button, .toolbarbutton-1.msgHeaderView-button > .toolbarbutton-menubutton-dropmarker {
+	-moz-appearance: none !important;
+	border: 1px solid rgba(0,0,0,0) !important;
+	background: transparent !important;
+
 }
+
+.toolbarbutton-1.msgHeaderView-button {
+	margin-left: 2px !important;
+	margin-right: 2px !important;
+	margin-top: 2px !important;
+}
+
+.toolbarbutton-1.msgHeaderView-button > .toolbarbutton-menubutton-button {
+	border-right: 1px solid rgba(127,127,127,0.5) !important;
+}
+
+.toolbarbutton-1.msgHeaderView-button:hover {
+	border: 1px solid rgba(0,0,0,0.25) !important;
+	background-color: rgba(127,127,127,0.1) !important;
+}
+
+#msgNotificationBar notification[type="warning"] {
+	color: var(--headers-text-color) !important;
+	background-color: var(--notification-background-color) !important;
+	border-bottom: 1px solid rgba(0,0,0,0.25) !important;
+	padding-bottom: 4px !important;
+}
+
+#msgNotificationBar notification .notification-button {
+	-moz-appearance: none !important;
+	min-width: 0px !important;
+	border: 1px solid rgba(0,0,0,0.25) !important;
+	background-color: rgba(225,225,225,0.9) !important;
+	margin: 4px 12px 2px 0px !important;
+	padding: 0px 6px 2px 6px !important;
+	border-radius: 3px !important;
+}
+
+#msgNotificationBar notification .notification-button:hover {
+	background-color: rgba(225,225,225,0.4) !important;
+} 
 
 .msgHeaderView-button > label {
 	display:none;
+}
+
+#messagePaneWrapper {
+	background-color: var(--headers-background-color) !important;
+}
+
+#statusBar {
+	background-color: var(--message-list-header-background-color) !important;
 }
 
 #expandedHeader2Rows row {
@@ -262,6 +391,7 @@ thumb:hover {
 	
 #expandedsubjectBox .headerValue {
 	font-size: var(--subject-line-font-size) !important;
+	padding: 0 !important;
 }
 
 .emailStar {
