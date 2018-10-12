@@ -25,6 +25,14 @@ treechildren:-moz-tree-twisty(open) { list-style-image: url("folder-pane/twisty-
 	-moz-image-region: rect(0px 12px 12px 0px) !important;
 }
 
+#threadTree treechildren::-moz-tree-image {
+	margin-left: 1px !important;
+}
+
+#threadTree treechildren::-moz-tree-image(flaggedCol) {
+	margin-left: 2px !important;
+}
+
 #threadTree treechildren::-moz-tree-image(senderCol), #threadTree treechildren::-moz-tree-image(dateCol), #threadTree treechildren::-moz-tree-image(recipientCol), #threadTree treechildren::-moz-tree-image(sizeCol), #threadTree treechildren::-moz-tree-image(accountCol), #threadTree treechildren::-moz-tree-image(dateCol) {
 	width: 0px !important;
 	-moz-image-region: none !important;

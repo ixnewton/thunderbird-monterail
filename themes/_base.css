@@ -241,7 +241,7 @@ treechildren::-moz-tree-twisty {
 	margin-top: 3px !important;
 	margin-bottom: 3px !important;
 	border-left: 1px solid rgba(127,127,127,0.4) !important;
-	min-width: 21px !important;
+	min-width: 22px !important;
 }
 
 #threadPane {

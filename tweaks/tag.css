@@ -14,17 +14,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-.flagColumnHeader, #threadTree > treechildren::-moz-tree-cell(flaggedCol) {
-	width: 20px;
-	padding-left: 5px !important;
-	padding-right: 0px !important;
-}
-.spamColumnHeader, #threadTree > treechildren::-moz-tree-cell(spamCol) {
-	width: 20px;
-	padding-left: 3px !important;
-	padding-right: 0px !important;
-}
-
 #threadTree > treechildren::-moz-tree-cell(lc-000000, dateCol) {
 	border-right: 5px solid #000000 !important;
 }
