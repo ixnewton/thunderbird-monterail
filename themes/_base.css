@@ -101,7 +101,7 @@ treechildren::-moz-tree-cell-text(selected) {
 }
 
 /****** Folder Tree *****/
-treechildren:-moz-tree-twisty {
+treechildren::-moz-tree-twisty {
 	width: 12px !important;
 	-moz-image-region: rect(0px 12px 12px 0px) !important;
 	-moz-appearance: none !important;
@@ -219,24 +219,6 @@ treechildren:-moz-tree-twisty {
 	color: var(--message-list-highlight-text-color) !important;
 }
 
-/*
-#threadTree > treechildren:-moz-tree-cell-text(imapsent) {
-    color: var(--message-list-sent-text-color) !important;
-}
-
-#threadTree > treechildren::-moz-tree-cell(imapsent) {
-    background-color: var(--message-list-sent-background-color) !important;
-}
-
-#threadTree > treechildren::-moz-tree-cell(imapsent,selected) {
-    background-color: var(--message-list-highlight-background-color) !important;
-}
-
-#threadTree > treechildren::-moz-tree-cell-text(imapsent,selected) {
-    color: var(--message-list-highlight-text-color) !important;
-}
-*/
-
 #threadCols, #threadCols treecol, #threadCols treecolpicker {
 	-moz-appearance: none !important;
 	background: var(--message-list-header-background-color) !important;
@@ -253,7 +235,7 @@ treechildren:-moz-tree-twisty {
 #threadCols treecol, #threadCols treecolpicker {
 	color: var(--message-list-header-text-color) !important;
 	border: none !important;
-	padding: 3px !important;
+	padding-left: 3px !important;
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 	margin-top: 3px !important;

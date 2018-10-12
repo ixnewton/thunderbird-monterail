@@ -19,9 +19,15 @@ treechildren:-moz-tree-twisty {	list-style-image: url("folder-pane/twisty-dark.s
 treechildren:-moz-tree-twisty(open) { list-style-image: url("folder-pane/twisty-expanded-dark.svg") !important; padding: 0 5px !important; }
 
 /******* Message view icons ********/
+
 #folderTree treechildren::-moz-tree-image, #threadTree treechildren::-moz-tree-image {
 	width: 14px !important;
 	-moz-image-region: rect(0px 12px 12px 0px) !important;
+}
+
+#threadTree treechildren::-moz-tree-image(senderCol), #threadTree treechildren::-moz-tree-image(dateCol), #threadTree treechildren::-moz-tree-image(recipientCol), #threadTree treechildren::-moz-tree-image(sizeCol), #threadTree treechildren::-moz-tree-image(accountCol), #threadTree treechildren::-moz-tree-image(dateCol) {
+	width: 0px !important;
+	-moz-image-region: none !important;
 }
 
 #threadCols {
@@ -34,8 +40,16 @@ treechildren:-moz-tree-twisty(open) { list-style-image: url("folder-pane/twisty-
 	margin-right: 5px !important;
 }
 
+#threadTree > treechildren::-moz-tree-cell(attachmentCol) {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
 /* ..... thread column ..... */
 treechildren::-moz-tree-image(threadCol) { list-style-image: url("message-list/thread-dark.svg") !important; }
+treechildren::-moz-tree-image(senderCol) { padding-left: 7px !important; }
+treechildren::-moz-tree-image(subjectCol) { padding-left: 7px !important; }
+treechildren::-moz-tree-image(dateCol) { padding-left: 7px !important; }
 
 /* ..... read column ..... */
 .readColumnHeader { list-style-image: url("message-list/read-header-dark.svg") !important; }
