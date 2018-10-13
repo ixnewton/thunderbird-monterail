@@ -219,6 +219,24 @@ treechildren::-moz-tree-twisty {
 	color: var(--message-list-highlight-text-color) !important;
 }
 
+/******** Change colors of forwarded messages *********/
+#threadTree > treechildren:-moz-tree-cell-text(forwarded) {
+	color: var(--message-list-forward-text-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(forwarded) {
+	background-color: var(--message-list-forward-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(forwarded,selected) {
+	background-color: var(--message-list-highlight-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(forwarded,selected) {
+	color: var(--message-list-highlight-text-color) !important;
+}
+
+
 #threadCols, #threadCols treecol, #threadCols treecolpicker {
 	-moz-appearance: none !important;
 	background: var(--message-list-header-background-color) !important;
