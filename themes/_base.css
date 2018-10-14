@@ -267,6 +267,7 @@ treechildren::-moz-tree-twisty {
 }
 
 /* Disabled scrollbar to allow KDE Breeze styling through */ 
+
 /* scrollbar {
 	margin-right: 5px !important;
 	width: 10px !important;

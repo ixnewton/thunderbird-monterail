@@ -291,5 +291,5 @@
 }
 
 #threadTree > treechildren::-moz-tree-cell(dateCol) {
-	border-right: 5px solid #f0f0f0;
+	border-right: 0px solid #f0f0f0;
 }

@@ -69,7 +69,7 @@
   --message-list-header-text-color: var(--gen-text-color);
   --message-list-background-color: #fcfcfc;
   --message-list-text-color: var(--gen-text-color);
-  --message-list-row-height: 28px;
+  --message-list-row-height: 32px;
   --message-list-highlight-background-color: var(--highlight-color);
   --message-list-highlight-text-color: var(--alt-highlight-text-color);
   --message-list-unread-text-color: var(--highlight-text-color);
@@ -79,7 +79,7 @@
   --message-list-read-text-color:  var(--gen-text-color);
   --message-list-read-background-color: #fffffa;
   --message-list-forward-text-color:  var(--gen-text-color);
-  --message-list-forward-background-color: #ffffe7;
+  --message-list-forward-background-color: #ffffe0;
 
   /*---- Message Filter Bar ----*/  
   --filter-bar-background-color:  #e0e0e7;
@@ -89,7 +89,7 @@
   --scrollbar-thumb-hover-color: var(--highlight-color); */
   
   /*---- Message Headers (To/Subject/From etc) ----*/
-  --subject-line-font-size: 120%;
+  --subject-line-font-size: 100%;
   --headers-background-color: #e0e0ea;
   --headers-text-color: #444444;
   --notification-background-color: #ffeced;
