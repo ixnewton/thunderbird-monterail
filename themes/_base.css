@@ -67,7 +67,7 @@ box, hbox, vbox, toolbox {
 }
 
 splitter {
-	border-color: rgba(127,127,127,0.25) !important;
+	border-color: rgba(127,127,127,0.2) !important;
 }
 
 .mail-toolbox::after,
@@ -156,7 +156,7 @@ treechildren::-moz-tree-twisty {
 
 /***** Thread tree *****/
 #threadTree {
-	background: var(--message-list-background-color) !important;
+	background-color: var(--message-list-container-color) !important;
 }
 
 #threadTree > treechildren::-moz-tree-row {

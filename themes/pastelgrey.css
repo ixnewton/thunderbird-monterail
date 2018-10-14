@@ -68,6 +68,7 @@
   --message-list-header-background-color: #e0e0ea;
   --message-list-header-text-color: var(--gen-text-color);
   --message-list-background-color: #fcfcfc;
+  --message-list-container-color: #efefef;
   --message-list-text-color: var(--gen-text-color);
   --message-list-row-height: 32px;
   --message-list-highlight-background-color: var(--highlight-color);
