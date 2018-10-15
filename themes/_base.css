@@ -81,6 +81,7 @@ menu[disabled="true"] label, menuitem[disabled="true"] label, .splitmenu-menuite
 .chromeclass-toolbar menu[disabled="true"] label, .chromeclass-toolbar menuitem[disabled="true"] label, .chromeclass-toolbar .splitmenu-menuitem[disabled="true"] label, .chromeclass-toolbar menucaption[disabled="true"] label {
   color: grey !important;
 }
+
 .chromeclass-status {
 	-mz-appearance: none !important;
 	background: var(--filter-bar-background-color) !important;
@@ -88,7 +89,7 @@ menu[disabled="true"] label, menuitem[disabled="true"] label, .splitmenu-menuite
 }
 
 #status-bar:-moz-lwtheme {
-    border-top: 1px solid rgba(127,127,127,0.15) !important;
+    border-top: 1px solid rgba(127,127,127,0.2) !important;
 }
 
 /****** General Tree Views *****/
@@ -157,13 +158,14 @@ treechildren::-moz-tree-twisty {
 /***** Thread tree *****/
 #threadTree {
 	background-color: var(--message-list-container-color) !important;
-	border-bottom: 0px solid #F0F0F0 !important;
+	border-bottom: none !important;
+	border-right: 1px solid rgba(127,127,127,0.1) !important;
 }
 
 #threadTree > treechildren::-moz-tree-row {
 	height: var(--message-list-row-height) !important;
 	border: none !important;
-	background: var(--message-list-background-color) !important;
+	background: var(--message-list-read-background-color) !important;
 	border-bottom: 1px solid rgba(127,127,127,0.13) !important;
 	border-right: 1px solid rgba(239,239,239,1.0) !important;
 	border-left: 1px solid rgba(127,127,127,0.1) !important;
@@ -310,8 +312,8 @@ thumb:hover {
 	-moz-appearance: none !important;
 	color: var(--headers-text-color) !important;
 	background-color: var(--headers-background-color) !important;
-	border-bottom: 1px solid rgba(0,0,0,0.25) !important;
-	padding-bottom: 4px !important;
+	border-bottom: 1px solid rgba(127,127,127,0.15) !important;
+	padding-bottom: 5px !important;
 }
 
 .msgHeaderView-button {

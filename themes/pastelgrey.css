@@ -67,7 +67,7 @@
   /*---- Message List ----*/
   --message-list-header-background-color: #e0e0ea;
   --message-list-header-text-color: var(--gen-text-color);
-  --message-list-background-color: #fffffd;
+  --message-list-background-color: #fffffa;
   --message-list-container-color: #efefef;
   --message-list-text-color: var(--gen-text-color);
   --message-list-row-height: 34px;
@@ -76,11 +76,11 @@
   --message-list-unread-text-color: var(--highlight-text-color);
   --message-list-unread-background-color: #efffe7;
   --message-list-replied-text-color: var(--gen-text-color);
-  --message-list-replied-background-color: #fff5e7;
+  --message-list-replied-background-color: #fff1e4;
   --message-list-read-text-color:  var(--gen-text-color);
-  --message-list-read-background-color: #fffffa;
+  --message-list-read-background-color: #ffffff;
   --message-list-forward-text-color:  var(--gen-text-color);
-  --message-list-forward-background-color: #ffffe0;
+  --message-list-forward-background-color: #ffffd7;
 
   /*---- Message Filter Bar ----*/  
   --filter-bar-background-color:  #e0e0e7;
