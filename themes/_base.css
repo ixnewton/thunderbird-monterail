@@ -163,7 +163,9 @@ treechildren::-moz-tree-twisty {
 	height: var(--message-list-row-height) !important;
 	border: none !important;
 	background: var(--message-list-background-color) !important;
-	border-bottom: 1px solid rgba(127,127,127,0.2) !important;
+	border-bottom: 1px solid rgba(127,127,127,0.13) !important;
+	border-right: 1px solid rgba(239,239,239,1.0) !important;
+	border-left: 1px solid rgba(127,127,127,0.1) !important;
 }
 
 #threadTree > treechildren::-moz-tree-cell-text {

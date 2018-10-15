@@ -67,14 +67,14 @@
   /*---- Message List ----*/
   --message-list-header-background-color: #e0e0ea;
   --message-list-header-text-color: var(--gen-text-color);
-  --message-list-background-color: #fcfcfc;
+  --message-list-background-color: #fffffd;
   --message-list-container-color: #efefef;
   --message-list-text-color: var(--gen-text-color);
   --message-list-row-height: 32px;
   --message-list-highlight-background-color: var(--highlight-color);
   --message-list-highlight-text-color: var(--alt-highlight-text-color);
   --message-list-unread-text-color: var(--highlight-text-color);
-  --message-list-unread-background-color: #eeffee;
+  --message-list-unread-background-color: #efffe7;
   --message-list-replied-text-color: var(--gen-text-color);
   --message-list-replied-background-color: #fff5e7;
   --message-list-read-text-color:  var(--gen-text-color);

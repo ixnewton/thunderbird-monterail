@@ -289,7 +289,3 @@
 #threadTree > treechildren::-moz-tree-cell(lc-FFFFCC, dateCol) {
 	border-right: 5px solid #FFFFCC !important;
 }
-
-#threadTree > treechildren::-moz-tree-cell(dateCol) {
-	border-right: none;
-}
