@@ -70,7 +70,7 @@
   --message-list-background-color: #fffffd;
   --message-list-container-color: #efefef;
   --message-list-text-color: var(--gen-text-color);
-  --message-list-row-height: 32px;
+  --message-list-row-height: 34px;
   --message-list-highlight-background-color: var(--highlight-color);
   --message-list-highlight-text-color: var(--alt-highlight-text-color);
   --message-list-unread-text-color: var(--highlight-text-color);

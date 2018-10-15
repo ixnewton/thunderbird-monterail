@@ -14,6 +14,10 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#threadTree > treechildren::-moz-tree-cell(dateCol) {
+	border-right: 1px solid #f0f0f0 !important;
+}
+
 #threadTree > treechildren::-moz-tree-cell(lc-000000, dateCol) {
 	border-right: 5px solid #000000 !important;
 }

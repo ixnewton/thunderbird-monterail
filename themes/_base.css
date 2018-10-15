@@ -67,7 +67,7 @@ box, hbox, vbox, toolbox {
 }
 
 splitter {
-	border-color: rgba(127,127,127,0.2) !important;
+	border-color: rgba(127,127,127,0.15) !important;
 }
 
 .mail-toolbox::after,
@@ -88,7 +88,7 @@ menu[disabled="true"] label, menuitem[disabled="true"] label, .splitmenu-menuite
 }
 
 #status-bar:-moz-lwtheme {
-    border-top: 1px solid rgba(127,127,127,0.2) !important;
+    border-top: 1px solid rgba(127,127,127,0.15) !important;
 }
 
 /****** General Tree Views *****/
@@ -157,6 +157,7 @@ treechildren::-moz-tree-twisty {
 /***** Thread tree *****/
 #threadTree {
 	background-color: var(--message-list-container-color) !important;
+	border-bottom: 0px solid #F0F0F0 !important;
 }
 
 #threadTree > treechildren::-moz-tree-row {
