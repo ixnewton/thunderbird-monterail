@@ -67,8 +67,8 @@ box, hbox, vbox, toolbox {
 }
 
 splitter {
-	border-color: rgba(127,127,127,0.2) !important;
-	border-bottom: none !important;
+	border: none !important;
+	border-left: 1px solid rgba(127,127,127,0.2) !important;
 }
 
 .mail-toolbox::after,
@@ -161,6 +161,8 @@ treechildren::-moz-tree-twisty {
 	background-color: var(--message-list-container-color) !important;
 	border-bottom: none !important;
 	border-right: 1px solid rgba(127,127,127,0.05) !important;
+	margin-right: none !important;
+	padding-right: none !important;
 }
 
 #threadTree > treechildren::-moz-tree-row {
@@ -176,7 +178,7 @@ treechildren::-moz-tree-twisty {
 	color: var(--message-list-text-color) !important;
 }
 
-#threadTree > treechildren::-moz-tree-row(selected) {
+#threadTree > treechildren::-moz-tree-cell(selected) {
 	background: var(--message-list-highlight-background-color) !important;
 }
 
@@ -371,10 +373,6 @@ thumb:hover {
 
 .msgHeaderView-button > label {
 	display:none;
-}
-
-#messagePaneWrapper {
-	background-color: var(--headers-background-color) !important;
 }
 
 #statusBar {

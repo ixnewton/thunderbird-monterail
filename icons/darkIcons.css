@@ -45,13 +45,14 @@
 }
 
 #threadCols { 
-	padding-left: 5px !important; 
-	padding-right: 5px !important;
+	padding-left: 0px !important; 
+	padding-right: 0px !important;
 }
 
 #threadTree treechildren { 
-	margin-left: 5px !important;
-	margin-right: 5px !important;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	border-right: 0px solid var(--folder-tree-background-color) !important;
 }
 
 #threadTree > treechildren::-moz-tree-cell(attachmentCol) { 
