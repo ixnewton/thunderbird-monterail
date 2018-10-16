@@ -1,0 +1,295 @@
+/*Copyright (C) 2017  Matthew Richardson
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+#threadTree > treechildren::-moz-tree-cell(dateCol) {
+	border-right: none !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-000000, dateCol) {
+	border-right: 6px solid #000000 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-000066, dateCol) {
+	border-right: 6px solid #000066 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-000099, dateCol) {
+	border-right: 6px solid #000099 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-003300, dateCol) {
+	border-right: 6px solid #003300 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-003333, dateCol) {
+	border-right: 6px solid #003333 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-006600, dateCol) {
+	border-right: 6px solid #006600 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-009900, dateCol) {
+	border-right: 6px solid #009900 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-00CCCC, dateCol) {
+	border-right: 6px solid #00CCCC !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-330000, dateCol) {
+	border-right: 6px solid #330000 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-330033, dateCol) {
+	border-right: 6px solid #330033 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-330099, dateCol) {
+	border-right: 6px solid #330099 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-333300, dateCol) {
+	border-right: 6px solid #333300 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-333333, dateCol) {
+	border-right: 6px solid #333333 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-333399, dateCol) {
+	border-right: 6px solid #333399 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-3333FF, dateCol) {
+	border-right: 6px solid #3333FF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-336666, dateCol) {
+	border-right: 6px solid #336666 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-3366FF, dateCol) {
+	border-right: 6px solid #3366FF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-339999, dateCol) {
+	border-right: 6px solid #339999 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-33CC00, dateCol) {
+	border-right: 6px solid #33CC00 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-33CCFF, dateCol) {
+	border-right: 6px solid #33CCFF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-33FF33, dateCol) {
+	border-right: 6px solid #33FF33 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-33FFFF, dateCol) {
+	border-right: 6px solid #33FFFF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-660000, dateCol) {
+	border-right: 6px solid #660000 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-6600CC, dateCol) {
+	border-right: 6px solid #6600CC !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-663300, dateCol) {
+	border-right: 6px solid #663300 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-663333, dateCol) {
+	border-right: 6px solid #663333 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-663366, dateCol) {
+	border-right: 6px solid #663366 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-6633FF, dateCol) {
+	border-right: 6px solid #6633FF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-666600, dateCol) {
+	border-right: 6px solid #666600 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-666666, dateCol) {
+	border-right: 6px solid #666666 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-6666CC, dateCol) {
+	border-right: 6px solid #6666CC !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-66CCCC, dateCol) {
+	border-right: 6px solid #66CCCC !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-66FF99, dateCol) {
+	border-right: 6px solid #66FF99 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-66FFFF, dateCol) {
+	border-right: 6px solid #66FFFF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-990000, dateCol) {
+	border-right: 6px solid #990000 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-993300, dateCol) {
+	border-right: 6px solid #993300 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-993399, dateCol) {
+	border-right: 6px solid #993399 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-996633, dateCol) {
+	border-right: 6px solid #996633 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-999900, dateCol) {
+	border-right: 6px solid #999900 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-999999, dateCol) {
+	border-right: 6px solid #999999 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-9999FF, dateCol) {
+	border-right: 6px solid #9999FF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-99FF99, dateCol) {
+	border-right: 6px solid #99FF99 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-99FFFF, dateCol) {
+	border-right: 6px solid #99FFFF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-C0C0C0, dateCol) {
+	border-right: 6px solid #C0C0C0 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-CC0000, dateCol) {
+	border-right: 6px solid #CC0000 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-CC33CC, dateCol) {
+	border-right: 6px solid #CC33CC !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-CC6600, dateCol) {
+	border-right: 6px solid #CC6600 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-CC66CC, dateCol) {
+	border-right: 6px solid #CC66CC !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-CC9933, dateCol) {
+	border-right: 6px solid #CC9933 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-CCCCCC, dateCol) {
+	border-right: 6px solid #CCCCCC !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-CCCCFF, dateCol) {
+	border-right: 6px solid #CCCCFF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-CCFFFF, dateCol) {
+	border-right: 6px solid #CCFFFF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FF0000, dateCol) {
+	border-right: 6px solid #FF0000 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FF6600, dateCol) {
+	border-right: 6px solid #FF6600 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FF6666, dateCol) {
+	border-right: 6px solid #FF6666 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FF9900, dateCol) {
+	border-right: 6px solid #FF9900 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FF9966, dateCol) {
+	border-right: 6px solid #FF9966 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FF99FF, dateCol) {
+	border-right: 6px solid #FF99FF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFCC00, dateCol) {
+	border-right: 6px solid #FFCC00 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFCC33, dateCol) {
+	border-right: 6px solid #FFCC33 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFCC66, dateCol) {
+	border-right: 6px solid #FFCC66 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFCC99, dateCol) {
+	border-right: 6px solid #FFCC99 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFCCCC, dateCol) {
+	border-right: 6px solid #FFCCCC !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFCCFF, dateCol) {
+	border-right: 6px solid #FFCCFF !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFFF00, dateCol) {
+	border-right: 6px solid #FFFF00 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFFF33, dateCol) {
+	border-right: 6px solid #FFFF33 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFFF66, dateCol) {
+	border-right: 6px solid #FFFF66 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFFF99, dateCol) {
+	border-right: 6px solid #FFFF99 !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(lc-FFFFCC, dateCol) {
+	border-right: 6px solid #FFFFCC !important;
+}

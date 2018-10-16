@@ -22,7 +22,12 @@
 */
 
 @import "_base.css";
-@import "../tweaks/tag.css"; 
+
+/*  Collection of pastel highlight effect applied to Message List by unread, read, replied and forwarded status */
+@import "../tweaks/pastel-highlight.css";
+
+/*  Tag marking applied to date column to work with mail status highlight */
+@import "../tweaks/tag-highlight.css";
 
 /* Select icon theme (leave commented to use default for the selected theme)*/
 /* @import "../icons/lightIcons.css"; /*For dark Folder Tree and Message List*/

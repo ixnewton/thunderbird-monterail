@@ -1,0 +1,73 @@
+/*Copyright (C) 2018  Ian Newton
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+/******* Change colors of unread messages *********/
+#threadTree > treechildren:-moz-tree-cell-text(unread) {
+	color: var(--message-list-unread-text-color) !important;
+	font-weight: 600;
+}
+
+#threadTree > treechildren::-moz-tree-cell(unread) {
+	background-color: var(--message-list-unread-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(unread,selected) {
+	background-color: var(--message-list-highlight-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(unread,selected) {
+	color: var(--message-list-highlight-text-color) !important;
+	font-weight: 600;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(read,selected) {
+	color: var(--message-list-highlight-text-color) !important;
+}
+
+/******** Change colors of replied messages *********/
+#threadTree > treechildren:-moz-tree-cell-text(replied) {
+	color: var(--message-list-replied-text-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(replied) {
+	background-color: var(--message-list-replied-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(replied,selected) {
+	background-color: var(--message-list-highlight-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(replied,selected) {
+	color: var(--message-list-highlight-text-color) !important;
+}
+
+/******** Change colors of forwarded messages *********/
+#threadTree > treechildren:-moz-tree-cell-text(forwarded) {
+	color: var(--message-list-forward-text-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(forwarded) {
+	background-color: var(--message-list-forward-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(forwarded,selected) {
+	background-color: var(--message-list-highlight-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(forwarded,selected) {
+	color: var(--message-list-highlight-text-color) !important;
+}
