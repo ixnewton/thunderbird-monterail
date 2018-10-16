@@ -71,6 +71,10 @@ splitter {
 	border-left: 1px solid rgba(127,127,127,0.2) !important;
 }
 
+.searchBox {
+	border-radius: 4px !important;
+}
+
 .mail-toolbox::after,
 .contentTabToolbox::after {
   content: "";
@@ -160,7 +164,7 @@ treechildren::-moz-tree-twisty {
 #threadTree {
 	background-color: var(--message-list-container-color) !important;
 	border-bottom: none !important;
-	border-right: 1px solid rgba(127,127,127,0.05) !important;
+	border-right: none !important;
 	margin-right: none !important;
 	padding-right: none !important;
 }
@@ -292,25 +296,29 @@ thumb:hover {
 	background-color: rgba(127,127,127,0.1) !important;
 }
 
-#msgNotificationBar notification[type="warning"] {
+#msgNotificationBar notification {
 	color: var(--headers-text-color) !important;
-	background-color: var(--notification-background-color) !important;
+	background-color: var(--information-background-color) !important;
 	border-bottom: 1px solid rgba(0,0,0,0.25) !important;
 	padding-bottom: 4px !important;
+}
+
+#msgNotificationBar notification[type="warning"] {
+	background-color: var(--notification-background-color) !important;
 }
 
 #msgNotificationBar notification .notification-button {
 	-moz-appearance: none !important;
 	min-width: 0px !important;
 	border: 1px solid rgba(0,0,0,0.25) !important;
-	background-color: rgba(225,225,225,0.9) !important;
+	background-color: rgba(225,225,225,0.4) !important;
 	margin: 4px 12px 2px 0px !important;
 	padding: 0px 6px 2px 6px !important;
-	border-radius: 3px !important;
+	border-radius: 4px !important;
 }
 
 #msgNotificationBar notification .notification-button:hover {
-	background-color: rgba(225,225,225,0.4) !important;
+	background-color: rgba(167,167,167,0.2) !important;
 } 
 
 .msgHeaderView-button > label {
