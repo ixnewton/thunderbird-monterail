@@ -67,7 +67,8 @@ box, hbox, vbox, toolbox {
 }
 
 splitter {
-	border-color: rgba(127,127,127,0.15) !important;
+	border-color: rgba(127,127,127,0.2) !important;
+	border-bottom: none !important;
 }
 
 .mail-toolbox::after,
@@ -159,7 +160,7 @@ treechildren::-moz-tree-twisty {
 #threadTree {
 	background-color: var(--message-list-container-color) !important;
 	border-bottom: none !important;
-	border-right: 1px solid rgba(127,127,127,0.1) !important;
+	border-right: 1px solid rgba(127,127,127,0.05) !important;
 }
 
 #threadTree > treechildren::-moz-tree-row {
@@ -245,6 +246,7 @@ treechildren::-moz-tree-twisty {
 #threadCols, #threadCols treecol, #threadCols treecolpicker {
 	-moz-appearance: none !important;
 	background: var(--message-list-header-background-color) !important;
+	border-bottom: 1px solid rgba(127,127,127,0.15) !important;
 }
 
 #threadCols treecol[sortDirection="ascending"] .treecol-sortdirection {
