@@ -91,7 +91,7 @@
   --filter-bar-background-color:  #e0e0e7;
   
   /*---- Scollbar ----*/
-/*  --scrollbar-thumb-color: rgba(127,127,127,0.5);
+  --scrollbar-thumb-background-color: rgba(175,175,200,0.4);
   --scrollbar-thumb-hover-color: var(--highlight-color); */
   
   /*---- Message Headers (To/Subject/From etc) ----*/
@@ -99,6 +99,7 @@
   --headers-background-color: #e0e0ea;
   --headers-text-color: #444444;
   --notification-background-color: #ffeced;
+  --information-background-color:  #ffffd7;
 }
 
 /******************************************************/
