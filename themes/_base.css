@@ -174,7 +174,7 @@ treechildren::-moz-tree-twisty {
 	border: none !important;
 	background: var(--message-list-read-background-color) !important;
 	border-bottom: 1px solid rgba(127,127,127,0.13) !important;
-	border-right: none !important;
+	border-right: 1px solid rgba(127,127,127,0.3) !important;
 	border-left: 1px solid rgba(127,127,127,0.1) !important;
 }
 
@@ -221,13 +221,13 @@ treechildren::-moz-tree-twisty {
 	-moz-appearance: none !important;
 }
 
-/* Disabled scrollbar to allow KDE Breeze styling through */ 
+/* Scrollbar styling to match frame background for foldertree and threadtree panes but allows the rest of OS styling through. Messagepane scrollbars seem inacessible so these scrollbars follow OS background Grrr !! */ 
 
-scrollbar, #document > scrollbar {
+scrollbar {
 	width: 12px !important;
 	max-width:12px !important;
 	-moz-appearance: none !important;
-	background: var(--scrollbar-thumb-background-color) !important;
+	background: var(--folder-tree-background-color) !important;
 	border: none !important;
 }
 

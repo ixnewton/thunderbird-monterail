@@ -91,7 +91,7 @@
   --filter-bar-background-color:  #e0e0e7;
   
   /*---- Scollbar ----*/
-  --scrollbar-thumb-background-color: rgba(175,175,200,0.4);
+/*  --scrollbar-thumb-background-color: rgba(175,175,200,0.4);
   --scrollbar-thumb-hover-color: var(--highlight-color); */
   
   /*---- Message Headers (To/Subject/From etc) ----*/
