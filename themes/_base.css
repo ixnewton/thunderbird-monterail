@@ -130,7 +130,7 @@ treechildren::-moz-tree-twisty {
 /****** Filter Bar *****/
 #quick-filter-bar-main-bar { 
 	background: var(--filter-bar-background-color) !important;
-	padding: 0px !important;
+	padding: 2px 0 0 0 !important;
 }
 
 #folderTree {
