@@ -66,13 +66,26 @@ box, hbox, vbox, toolbox {
 	box-shadow: none !important;
 }
 
+hbox#messagepaneboxwrapper {
+	border-left: 2px solid #d0d0d0 !important;
+}
+
+/*hbox#messagepaneboxwrapper hbox#messagepanewrapper browser#messagepane > html > scrollbar {
+	width: 12px !important;
+	max-width:12px !important;
+	-moz-appearance: none !important;
+	background: var(--folder-tree-background-color) !important;
+	border: none !important;
+}*/
+
 splitter {
 	border: none !important;
-	border-left: 1px solid rgba(127,127,127,0.2) !important;
+	border-left: 1px solid rgba(127,127,127,0.4) !important;
 }
 
 .searchBox {
 	border-radius: 4px !important;
+	background-color: rgba(245,245,245,0.4) !important;
 }
 
 .mail-toolbox::after,
@@ -88,7 +101,7 @@ menu[disabled="true"] label, menuitem[disabled="true"] label, .splitmenu-menuite
 }
 
 .chromeclass-status {
-	-mz-appearance: none !important;
+	-moz-appearance: none !important;
 	background: var(--filter-bar-background-color) !important;
 	border-top: 0px;
 }
@@ -195,6 +208,7 @@ treechildren::-moz-tree-twisty {
 	-moz-appearance: none !important;
 	background: var(--message-list-header-background-color) !important;
 	border-bottom: 1px solid rgba(127,127,127,0.15) !important;
+	border-top: none !important;
 }
 
 #threadCols treecol[sortDirection="ascending"] .treecol-sortdirection {
@@ -213,8 +227,14 @@ treechildren::-moz-tree-twisty {
 	padding-bottom: 0px !important;
 	margin-top: 3px !important;
 	margin-bottom: 3px !important;
-	border-left: 1px solid rgba(127,127,127,0.4) !important;
+	border-right: 1px solid rgba(127,127,127,0.4) !important;
 	min-width: 22px !important;
+}
+
+#threadCols treecolpicker:last-child {
+	border: none !important;
+	width: 20px !important;
+	min-width: 20px !important;
 }
 
 #threadPane {
@@ -230,41 +250,6 @@ scrollbar {
 	background: var(--folder-tree-background-color) !important;
 	border: none !important;
 }
-
-/* scrollbar {
-	margin-right: 5px !important;
-	width: 10px !important;
-	max-width:10px !important;
-	-moz-appearance: none !important;
-	background: none !important;
-	border: none !important;
-}
-
-srollbarbutton {
-	width: 10px !important;
-	max-width:10px !important;
-}	
-
-slider {
-	width: 10px !important;
-	max-width:10px !important;
-	-moz-appearance: none !important;
-	background: none !important;
-	border: none !important;
-} 
-
-thumb {
-	width: 10px !important;
-	max-width:10px !important;
-	-moz-appearance: none !important;
-	min-height: 100px !important;
-	border: none !important;
-	background: var(--scrollbar-thumb-color) !important;
-} 
-
-thumb:hover {
-	background: var(--scrollbar-thumb-hover-color) !important;
-} */
 
 #msgHeaderView {
 	-moz-appearance: none !important;

@@ -91,9 +91,9 @@
   --filter-bar-background-color:  #e0e0e7;
   
   /*---- Scollbar ----*/
-/*  --scrollbar-thumb-background-color: rgba(175,175,200,0.4);
-  --scrollbar-thumb-hover-color: var(--highlight-color); */
-  
+  --scrollbar-thumb-background-color: var(--highlight-color) !important;
+  --scrollbar-thumb-hover-color: var(--full-highlight-color);
+
   /*---- Message Headers (To/Subject/From etc) ----*/
   --subject-line-font-size: 100%;
   --headers-background-color: #e0e0ea;
