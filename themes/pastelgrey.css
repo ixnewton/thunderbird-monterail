@@ -79,7 +79,7 @@
   --message-list-highlight-background-color: var(--highlight-color);
   --message-list-highlight-text-color: var(--alt-highlight-text-color);
   --message-list-unread-text-color: var(--highlight-text-color);
-  --message-list-unread-background-color: #efffe7;
+  --message-list-unread-background-color: #ecfedd;
   --message-list-replied-text-color: var(--gen-text-color);
   --message-list-replied-background-color: #fff1e4;
   --message-list-read-text-color:  var(--gen-text-color);
