@@ -5,11 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="12"
    height="12"
    viewBox="0 0 12 11.999999"
    id="svg2"
-   version="1.1">
+   version="1.1"
+   sodipodi:docname="folder-search.svg"
+   inkscape:version="0.92.2 2405546, 2018-03-11">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1172"
+     inkscape:window-height="726"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="19.666667"
+     inkscape:cx="0.050847458"
+     inkscape:cy="6"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4" />
   <metadata
@@ -20,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -32,7 +56,7 @@
      id="layer1"
      transform="translate(-72.088666,-1434.8647)" />
   <path
-     style="fill:#37c8ab"
+     style="fill:#000000;fill-opacity:0.37878788"
      d="M 2.4755784,7.1463984 C 2.4216002,7.1200703 2.3654624,7.0673255 2.3508289,7.029195 2.3361896,6.9910572 2.3252988,5.4280606 2.3266048,3.5558605 c 0.00217,-3.08797883 0.0092,-3.41152254 0.075712,-3.48503181 0.068255,-0.07541704 0.1885212,-0.08103242 1.7355842,-0.08103242 l 1.6622517,0 0.3336118,0.33585333 0.3336116,0.33585317 2.7663118,0 2.7663123,0 0,3.17247003 c 0,3.1682186 -1.33e-4,3.1725846 -0.09425,3.2577767 -0.09127,0.082608 -0.24036,0.085578 -4.7131402,0.093912 -3.2035025,0.00596 -4.6489647,-0.00605 -4.7170331,-0.039267 z"
      id="path6189" />
   <path
