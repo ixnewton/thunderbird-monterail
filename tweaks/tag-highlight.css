@@ -14,282 +14,284 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+/* Note: Matching by tag using lc-****** color code works up to Tbird v60.* the latest versions v68 + seem to ignore or break this */
+
 #threadTree > treechildren::-moz-tree-cell(dateCol) {
 	border-right: none !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-000000, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-000000) {
 	border-right: 6px solid #000000 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-000066, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-000066) {
 	border-right: 6px solid #000066 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-000099, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-000099) {
 	border-right: 6px solid #000099 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-003300, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-003300) {
 	border-right: 6px solid #003300 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-003333, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-003333) {
 	border-right: 6px solid #003333 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-006600, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-006600) {
 	border-right: 6px solid #006600 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-009900, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-009900) {
 	border-right: 6px solid #009900 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-00CCCC, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-00CCCC) {
 	border-right: 6px solid #00CCCC !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-330000, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-330000) {
 	border-right: 6px solid #330000 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-330033, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-330033) {
 	border-right: 6px solid #330033 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-330099, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-330099) {
 	border-right: 6px solid #330099 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-333300, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-333300) {
 	border-right: 6px solid #333300 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-333333, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-333333) {
 	border-right: 6px solid #333333 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-333399, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-333399) {
 	border-right: 6px solid #333399 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-3333FF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-3333FF) {
 	border-right: 6px solid #3333FF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-336666, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-336666) {
 	border-right: 6px solid #336666 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-3366FF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-3366FF) {
 	border-right: 6px solid #3366FF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-339999, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-339999) {
 	border-right: 6px solid #339999 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-33CC00, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-33CC00) {
 	border-right: 6px solid #33CC00 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-33CCFF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-33CCFF) {
 	border-right: 6px solid #33CCFF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-33FF33, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-33FF33) {
 	border-right: 6px solid #33FF33 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-33FFFF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-33FFFF) {
 	border-right: 6px solid #33FFFF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-660000, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-660000) {
 	border-right: 6px solid #660000 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-6600CC, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-6600CC) {
 	border-right: 6px solid #6600CC !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-663300, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-663300) {
 	border-right: 6px solid #663300 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-663333, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-663333) {
 	border-right: 6px solid #663333 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-663366, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-663366) {
 	border-right: 6px solid #663366 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-6633FF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-6633FF) {
 	border-right: 6px solid #6633FF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-666600, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-666600) {
 	border-right: 6px solid #666600 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-666666, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-666666) {
 	border-right: 6px solid #666666 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-6666CC, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-6666CC) {
 	border-right: 6px solid #6666CC !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-66CCCC, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-66CCCC) {
 	border-right: 6px solid #66CCCC !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-66FF99, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-66FF99) {
 	border-right: 6px solid #66FF99 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-66FFFF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-66FFFF) {
 	border-right: 6px solid #66FFFF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-990000, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-990000) {
 	border-right: 6px solid #990000 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-993300, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-993300) {
 	border-right: 6px solid #993300 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-993399, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-993399) {
 	border-right: 6px solid #993399 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-996633, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-996633) {
 	border-right: 6px solid #996633 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-999900, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-999900) {
 	border-right: 6px solid #999900 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-999999, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-999999) {
 	border-right: 6px solid #999999 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-9999FF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-9999FF) {
 	border-right: 6px solid #9999FF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-99FF99, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-99FF99) {
 	border-right: 6px solid #99FF99 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-99FFFF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-99FFFF) {
 	border-right: 6px solid #99FFFF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-C0C0C0, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-C0C0C0) {
 	border-right: 6px solid #C0C0C0 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-CC0000, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-CC0000) {
 	border-right: 6px solid #CC0000 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-CC33CC, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-CC33CC) {
 	border-right: 6px solid #CC33CC !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-CC6600, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-CC6600) {
 	border-right: 6px solid #CC6600 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-CC66CC, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-CC66CC) {
 	border-right: 6px solid #CC66CC !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-CC9933, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-CC9933) {
 	border-right: 6px solid #CC9933 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-CCCCCC, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-CCCCCC) {
 	border-right: 6px solid #CCCCCC !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-CCCCFF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-CCCCFF) {
 	border-right: 6px solid #CCCCFF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-CCFFFF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-CCFFFF) {
 	border-right: 6px solid #CCFFFF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FF0000, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FF0000) {
 	border-right: 6px solid #FF0000 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FF6600, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FF6600) {
 	border-right: 6px solid #FF6600 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FF6666, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FF6666) {
 	border-right: 6px solid #FF6666 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FF9900, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FF9900) {
 	border-right: 6px solid #FF9900 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FF9966, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FF9966) {
 	border-right: 6px solid #FF9966 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FF99FF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FF99FF) {
 	border-right: 6px solid #FF99FF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFCC00, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFCC00) {
 	border-right: 6px solid #FFCC00 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFCC33, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFCC33) {
 	border-right: 6px solid #FFCC33 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFCC66, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFCC66) {
 	border-right: 6px solid #FFCC66 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFCC99, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFCC99) {
 	border-right: 6px solid #FFCC99 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFCCCC, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFCCCC) {
 	border-right: 6px solid #FFCCCC !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFCCFF, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFCCFF) {
 	border-right: 6px solid #FFCCFF !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFFF00, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFFF00) {
 	border-right: 6px solid #FFFF00 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFFF33, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFFF33) {
 	border-right: 6px solid #FFFF33 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFFF66, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFFF66) {
 	border-right: 6px solid #FFFF66 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFFF99, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFFF99) {
 	border-right: 6px solid #FFFF99 !important;
 }
 
-#threadTree > treechildren::-moz-tree-cell(lc-FFFFCC, dateCol) {
+#threadTree > treechildren::-moz-tree-cell(dateCol, lc-FFFFCC) {
 	border-right: 6px solid #FFFFCC !important;
 }

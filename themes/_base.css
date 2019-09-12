@@ -233,8 +233,9 @@ treechildren::-moz-tree-twisty {
 
 #threadCols treecolpicker:last-child {
 	border: none !important;
-	width: 20px !important;
-	min-width: 20px !important;
+	width: 12px !important;
+	min-width: 12px !important;
+    padding-left: 1px !important;
 }
 
 #threadPane {
