@@ -16,7 +16,7 @@
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* Disabled to allow system fornt configuration to show */
+/* Disabled to allow system font configuration to show */
 
 /*@font-face {
     font-family: 'LightSans';
@@ -80,7 +80,6 @@ hbox#messagepaneboxwrapper {
 
 splitter {
 	border: none !important;
-	border-left: 1px solid rgba(127,127,127,0.4) !important;
 }
 
 .searchBox {
@@ -137,6 +136,7 @@ treechildren::-moz-tree-twisty {
 	-moz-appearance: none !important;
 	color: var(--folder-tree-text-color) !important;
 	background: var(--folder-tree-background-color) !important;
+    border-right: 1px solid rgba(127,127,127,0.1) !important;
 }
 
 #folderPaneCols > hbox, #folderTree > treechildren::-moz-tree-row, .tree-scrollable-columns {
@@ -159,8 +159,11 @@ treechildren::-moz-tree-twisty {
 }
 
 #folderTree > treechildren::-moz-tree-row(selected) {
-	border: none !important;
+    border: 0px solid rgba(127,127,127,0.1) !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
 	background: var(--folder-tree-highlight-background-color) !important;
+    margin-right: 4px !important;
 }
 
 #folderTree > treechildren::-moz-tree-cell-text(selected) {
@@ -187,8 +190,8 @@ treechildren::-moz-tree-twisty {
 	border: none !important;
 	background: var(--message-list-read-background-color) !important;
 	border-bottom: 1px solid rgba(127,127,127,0.13) !important;
-	border-right: 1px solid rgba(127,127,127,0.3) !important;
 	border-left: 1px solid rgba(127,127,127,0.1) !important;
+	border-right: 1px solid rgba(127,127,127,0.3) !important;
 }
 
 #threadTree > treechildren::-moz-tree-cell-text {
@@ -233,8 +236,8 @@ treechildren::-moz-tree-twisty {
 
 #threadCols treecolpicker:last-child {
 	border: none !important;
-	width: 12px !important;
-	min-width: 12px !important;
+	width: 15px !important;
+	min-width: 15px !important;
     padding-left: 1px !important;
 }
 
@@ -245,11 +248,12 @@ treechildren::-moz-tree-twisty {
 /* Scrollbar styling to match frame background for foldertree and threadtree panes but allows the rest of OS styling through. Messagepane scrollbars seem inacessible so these scrollbars follow OS background Grrr !! */ 
 
 scrollbar {
-	width: 12px !important;
-	max-width:12px !important;
+	width: 16px !important;
+	max-width:16px !important;
 	-moz-appearance: none !important;
 	background: var(--folder-tree-background-color) !important;
-	border: none !important;
+	border-left: 0px solid rgba(127,127,127,0.1) !important;
+    padding: 0 !important;
 }
 
 #msgHeaderView {
@@ -343,6 +347,10 @@ scrollbar {
 	font-size: var(--subject-line-font-size) !important;
 	padding: 0 !important;
 }
+
+/* #expandedtagsRow #expandedtagsBox .tagValue {
+	border-radius: 5px !important;
+} */
 
 .emailStar {
 	margin-inline-start: 2px !important;
