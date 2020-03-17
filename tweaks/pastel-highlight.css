@@ -14,8 +14,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-/* Note: Most of this styling remains working in the latest version v68 however tag highlighting using lc-****** color code matching works up to Tbird v60.* the latest versions v68 + seem to ignore or break this */
-
 /******* Change colors of unread messages *********/
 #threadTree > treechildren:-moz-tree-cell-text(unread) {
 	color: var(--message-list-unread-text-color) !important;
@@ -33,6 +31,18 @@
 #threadTree > treechildren::-moz-tree-cell-text(unread,selected) {
 	color: var(--message-list-highlight-text-color) !important;
 	font-weight: 600;
+}
+/******* Change colors of read messages *********/
+#threadTree > treechildren::-moz-tree-cell(read) {
+	background: var(--message-list-read-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell(read,selected) {
+	background: var(--message-list-highlight-background-color) !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(read) {
+	color: var(--message-list-text-color) !important;
 }
 
 #threadTree > treechildren::-moz-tree-cell-text(read,selected) {

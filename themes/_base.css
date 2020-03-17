@@ -82,6 +82,10 @@ splitter {
 	border: none !important;
 }
 
+#folderpane_splitter, #threadpane-splitter:not([orient="vertical"]) {
+    width: 4px !important;
+}
+
 .searchBox {
 	border-radius: 4px !important;
 	background-color: rgba(240,240,240,0.6) !important;
@@ -127,6 +131,11 @@ treechildren::-moz-tree-twisty {
 }
 
 /****** Filter Bar *****/
+#qfb-qs-textbox {
+    margin: 0px !important;
+    margin-right: 3px !important;
+}
+
 #quick-filter-bar-main-bar { 
 	background: var(--filter-bar-background-color) !important;
 	padding: 2px 0 0 0 !important;
@@ -136,7 +145,7 @@ treechildren::-moz-tree-twisty {
 	-moz-appearance: none !important;
 	color: var(--folder-tree-text-color) !important;
 	background: var(--folder-tree-background-color) !important;
-    border-right: 1px solid rgba(127,127,127,0.1) !important;
+    border-right: 1px solid rgba(127,127,127,0.2) !important;
 }
 
 #folderPaneCols > hbox, #folderTree > treechildren::-moz-tree-row, .tree-scrollable-columns {
@@ -183,28 +192,16 @@ treechildren::-moz-tree-twisty {
 	border-right: none !important;
 	margin-right: none !important;
 	padding-right: none !important;
+    border-right: 1px solid rgba(127,127,127,0.4) !important;
 }
+
 
 #threadTree > treechildren::-moz-tree-row {
 	height: var(--message-list-row-height) !important;
 	border: none !important;
-	background: var(--message-list-read-background-color) !important;
 	border-bottom: 1px solid rgba(127,127,127,0.13) !important;
 	border-left: 1px solid rgba(127,127,127,0.1) !important;
-	border-right: 1px solid rgba(127,127,127,0.3) !important;
-}
-
-#threadTree > treechildren::-moz-tree-cell-text {
-	color: var(--message-list-text-color) !important;
-}
-
-#threadTree > treechildren::-moz-tree-cell(selected) {
-	background: var(--message-list-highlight-background-color) !important;
-}
-
-#threadTree > treechildren::-moz-tree-cell-text(selected) {
-	color: var(--message-list-highlight-text-color) !important;
-	font-weight: 500;
+	border-right: 0px solid rgba(127,127,127,0.3) !important;
 }
 
 #threadCols, #threadCols treecol, #threadCols treecolpicker {
