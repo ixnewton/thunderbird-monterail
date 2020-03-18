@@ -79,7 +79,9 @@ hbox#messagepaneboxwrapper {
 }*/
 
 splitter {
+	-moz-appearance: none !important;
 	border: none !important;
+    border-left: 1px solid rgba(127,127,127,0.4) !important;
 }
 
 #folderpane_splitter, #threadpane-splitter:not([orient="vertical"]) {
@@ -139,13 +141,13 @@ treechildren::-moz-tree-twisty {
 #quick-filter-bar-main-bar { 
 	background: var(--filter-bar-background-color) !important;
 	padding: 2px 0 0 0 !important;
+    width: 300px;
 }
 
 #folderTree {
 	-moz-appearance: none !important;
 	color: var(--folder-tree-text-color) !important;
 	background: var(--folder-tree-background-color) !important;
-    border-right: 1px solid rgba(127,127,127,0.2) !important;
 }
 
 #folderPaneCols > hbox, #folderTree > treechildren::-moz-tree-row, .tree-scrollable-columns {
@@ -160,7 +162,6 @@ treechildren::-moz-tree-twisty {
 
 #folderTree > treechildren::-moz-tree-row {
 	margin-top: 5px !important;
-
 }
 
 #folderTree > treechildren::-moz-tree-row {
@@ -168,10 +169,10 @@ treechildren::-moz-tree-twisty {
 }
 
 #folderTree > treechildren::-moz-tree-row(selected) {
-    border: 0px solid rgba(127,127,127,0.1) !important;
+    border: none !important;
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
-	background: var(--folder-tree-highlight-background-color) !important;
+	background: var(--highlight-color) !important;
     margin-right: 4px !important;
 }
 
@@ -189,19 +190,15 @@ treechildren::-moz-tree-twisty {
 #threadTree {
 	background-color: var(--message-list-container-color) !important;
 	border-bottom: none !important;
-	border-right: none !important;
+	border-left: 1px solid rgba(127,127,127,0.2) !important;
 	margin-right: none !important;
 	padding-right: none !important;
-    border-right: 1px solid rgba(127,127,127,0.4) !important;
 }
-
 
 #threadTree > treechildren::-moz-tree-row {
 	height: var(--message-list-row-height) !important;
 	border: none !important;
-	border-bottom: 1px solid rgba(127,127,127,0.13) !important;
-	border-left: 1px solid rgba(127,127,127,0.1) !important;
-	border-right: 0px solid rgba(127,127,127,0.3) !important;
+	border-bottom: 1px solid rgba(127,127,127,0.15) !important;
 }
 
 #threadCols, #threadCols treecol, #threadCols treecolpicker {
@@ -240,6 +237,7 @@ treechildren::-moz-tree-twisty {
 
 #threadPane {
 	-moz-appearance: none !important;
+    border-right: 0px solid rgba(127,127,127,0.4) !important;
 }
 
 /* Scrollbar styling to match frame background for foldertree and threadtree panes but allows the rest of OS styling through. Messagepane scrollbars seem inacessible so these scrollbars follow OS background Grrr !! */ 
@@ -249,8 +247,8 @@ scrollbar {
 	max-width:16px !important;
 	-moz-appearance: none !important;
 	background: var(--folder-tree-background-color) !important;
-	border-left: 0px solid rgba(127,127,127,0.1) !important;
     padding: 0 !important;
+    border: none !important;
 }
 
 #msgHeaderView {
