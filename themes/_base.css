@@ -70,13 +70,16 @@ hbox#messagepaneboxwrapper {
 	border-left: 1px solid #d0d0d0 !important;
 }
 
-/*hbox#messagepaneboxwrapper hbox#messagepanewrapper browser#messagepane > html > scrollbar {
-	width: 12px !important;
-	max-width:12px !important;
+hbox#messagepaneboxwrapper hbox#messagepanewrapper browser#messagepane > html > scrollbar {
+	width: 16px !important;
 	-moz-appearance: none !important;
 	background: var(--folder-tree-background-color) !important;
 	border: none !important;
-}*/
+}
+
+slider[orient="vertical"] {
+    width: 10px !important;
+}
 
 splitter {
 	-moz-appearance: none !important;
@@ -88,9 +91,19 @@ splitter {
     width: 4px !important;
 }
 
-.searchBox {
-	border-radius: 4px !important;
-	background-color: rgba(240,240,240,0.6) !important;
+.searchBox  {
+    -moz-appearance: none !important;
+	border-radius: 3px !important;
+	background-color: rgba(255,255,255,0.9) !important;
+    max-width: 765px;
+    height: 24px;
+}
+
+#gloda-search, #searchInput {
+    -moz-appearance: none !important;
+    min-width: 300px !important;
+    margin-bottom: 1px;
+    border-radius: 3px !important;
 }
 
 .mail-toolbox::after,
@@ -243,8 +256,7 @@ treechildren::-moz-tree-twisty {
 /* Scrollbar styling to match frame background for foldertree and threadtree panes but allows the rest of OS styling through. Messagepane scrollbars seem inacessible so these scrollbars follow OS background Grrr !! */ 
 
 scrollbar {
-	width: 16px !important;
-	max-width:16px !important;
+	width: 15px !important;
 	-moz-appearance: none !important;
 	background: var(--folder-tree-background-color) !important;
     padding: 0 !important;

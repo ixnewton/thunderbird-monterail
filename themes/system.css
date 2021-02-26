@@ -32,10 +32,21 @@
 /**** Variables: Uncomment and Edit these for easy customisation ****/
 
 :root {
-  /*---- General Options ----*/
-  --menu-text-color: MenuText;
+	
+ /*---- General Options ----*/
+  --light-color: #EFF0F1;
+  --light-text-color: #31363B;
+  --light-white-background: white;
+  --light-light-background: var(--light-color);
+  --light-light-text-color: var(--light-text-color);
+  
+  /*** Set active tab background color: ***/
+  --fgTabBackgroundColor: var(--light-light-background) !important;
+  
+  --menu-text-color: var(--light-text-color);
+
   /*** These highlight colors are used if more specific ones aren't specified below ***/
-  --highlight-color: Highlight;
+  --highlight-color: #78b6e2;
   --highlight-text-color: HighlightText;
   
   /*---- Tree Views (Folder Tree/Message List) General Options ----*/
@@ -43,37 +54,78 @@
   --tree-row-highlight-text-color: var(--highlight-text-color);
   
   /*---- Folder Tree ----*/
-  --folder-tree-background-color: none;
-  --folder-tree-text-color: default;
+  --folder-tree-background-color: #e0e0ea;
+  --folder-tree-text-color: #444444;
   --dark-folder-tree-text-color: var(--folder-tree-text-color);
-  --folder-tree-row-height: 25px;
+  --folder-tree-row-height: 20px;
   --folder-tree-highlight-background-color: var(--tree-row-highlight-background-color);
   --folder-tree-highlight-text-color: var(--tree-row-highlight-text-color);
   
   /*---- Message List ----*/
-  --message-list-header-background-color: -moz-dialog;
+  --message-list-header-background-color: #e0e0ea;
   --message-list-header-text-color: WindowText;
-  --message-list-background-color: -moz-default-background-color;
+  --message-list-background-color: #fafaff;
   --message-list-text-color: WindowText;
-  --message-list-row-height: 40px;
+  --message-list-row-height: 25px;
   --message-list-highlight-background-color: var(--tree-row-highlight-background-color);
   --message-list-highlight-text-color: var(--tree-row-highlight-text-color);
+  --message-list-unread-text-color: #444444;
+  --message-list-unread-background-color: #e7ffec;
+  --message-list-replied-text-color: #444444;
+  --message-list-replied-background-color: #fffae7;
+
+  /*---- Message Filter Bar ----*/  
+  --filter-bar-background-color:  #e0e0e7;
   
   /*---- Scollbar ----*/
-  --scrollbar-thumb-color: rgba(127,127,127,0.5);
-  --scrollbar-thumb-hover-color: var(--highlight-color);
+/*  --scrollbar-thumb-color: rgba(127,127,127,0.5);
+  --scrollbar-thumb-hover-color: var(--highlight-color); */
   
   /*---- Message Headers (To/Subject/From etc) ----*/
-  --subject-line-font-size: 150%;
-  --headers-background-color: transparent;
-  --headers-text-color: WindowText;
+  --subject-line-font-size: 110%;
+  --headers-background-color: #e0e0ea;
+  --headers-text-color: #444444;
   
 }
 
 /******************************************************/
-
+resizer { 
+	-moz-appearance: none !important;
+}
 
 #folderTree {
 	-moz-appearance: var(--folder-tree-appearance, none) !important;
 	color: var(--dark-folder-tree-text-color) !important;
 }
+
+#compose-toolbox, #compose-toolbox > *, #ab-toolbox {
+	-moz-appearance: none !important;
+	background: var(--light-color) !important;
+}
+
+body {
+	background-color: var(--message-list-background-color) !important;
+}
+
+menu label, menuitem label, .splitmenu-menuitem label, menucaption label,
+.chromeclass-toolbar menu label, .chromeclass-toolbar menuitem label, .chromeclass-toolbar .splitmenu-menuitem label, .chromeclass-toolbar menucaption label {
+	color: var(--light-light-text-color) !important;
+}
+
+menupopup {
+	-moz-appearance: none !important;
+	background: var(--light-light-background) !important;
+	border: 1px solid #a0a0a0;
+	border-radius: 4px !important;
+}
+
+menuseparator {
+	-moz-appearance: none !important;
+	background: var(--light-text-color) !important;
+	border-bottom-width: 1px !important;
+	border-bottom-color: lightgrey !important;
+	border-bottom-style: solid !important;
+}
+
+
+

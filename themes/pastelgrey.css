@@ -40,7 +40,7 @@
 	
  /*---- General Options ----*/
   --light-color: #EFF0F1;
-  --light-text-color: #39394c;
+  --light-text-color: #393939;
   --light-white-background: white;
   --light-light-background: var(--light-color);
   --light-light-text-color: var(--light-text-color);
@@ -51,10 +51,13 @@
   --menu-text-color: var(--light-text-color);
 
   /*** These highlight colors are used if more specific ones aren't specified below ***/
-  --highlight-color: #78b6e2;
+  --highlight-color: #75b9f3;
   --full-highlight-color: #0070ff;
+  --tab-highlight-color: #2377ff;
+/*  #4d9bff;*/
+  --tab-normal-color: #808080;
   --highlight-text-color: #6a6a6a;
-  --gen-text-color: #39394c;  
+  --gen-text-color: #393939;  
   --alt-highlight-text-color: #ffffff;
   
   /*---- Tree Views (Folder Tree/Message List) General Options ----
@@ -72,23 +75,24 @@
   /*---- Message List ----*/
   --message-list-header-background-color: #e0e0ea;
   --message-list-header-text-color: var(--gen-text-color);
-  --message-list-background-color: #fffffa;
+  --message-list-background-color: #fffff0;
   --message-list-container-color: #efefef;
   --message-list-text-color: var(--gen-text-color);
   --message-list-row-height: 34px;
   --message-list-highlight-background-color: var(--highlight-color);
   --message-list-highlight-text-color: var(--alt-highlight-text-color);
   --message-list-unread-text-color: var(--highlight-text-color);
-  --message-list-unread-background-color: #ecfedd;
+  --message-list-unread-background-color: #e6faec;
   --message-list-replied-text-color: var(--gen-text-color);
-  --message-list-replied-background-color: #fff1e4;
+  --message-list-replied-background-color: #ffe8e0;
   --message-list-read-text-color:  var(--gen-text-color);
-  --message-list-read-background-color: #ffffff;
+  --message-list-read-background-color: #fbfbf8;
+  --message-list-read-background-color-odd: #fafafa;
   --message-list-forward-text-color:  var(--gen-text-color);
-  --message-list-forward-background-color: #ffffd7;
+  --message-list-forward-background-color: #eaf3ff;
 
   /*---- Message Filter Bar ----*/  
-  --filter-bar-background-color:  #e0e0e7;
+  --filter-bar-background-color: #e0e0e7;
   
   /*---- Scollbar ----*/
   --scrollbar-thumb-background-color: var(--highlight-color) !important;
@@ -135,6 +139,26 @@ menuseparator {
 	border-bottom-color: lightgrey !important;
 	border-bottom-style: solid !important;
 }
+/*hbox#messagepaneboxwrapper hbox#messagepanewrapper browser#messagepane > html > scrollbar {
+	width: 16px !important;
+	-moz-appearance: none !important;
+	background: var(--folder-tree-background-color) !important;
+	border: none !important;
+}*/
 
+scrollbar[orient="vertical"] {
+	-moz-appearance: none !important;
+	width: 16px !important;
+	background: var(--folder-tree-background-color) !important;
+	border-left: 1px solid #e0e0e0 !important;
+}
+
+/*slider[orient="vertical"] {
+    width: 8px !important;
+}
+
+thumb {
+    background-color: #d0d0d0 !important;
+}*/
 
 
