@@ -1,0 +1,102 @@
+/*Copyright (C) 2017  Matthew Richardson
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+/* 
+    Tweaked 02/2021 by Ian Newton to have unified tab styling and behavior on both Thunderbird and Firefox.
+    
+    The essential difference is slight rounding of tabs, softening of hover background whilst providing tab outline on hover
+*/
+
+.tabmail-tab .tab-background {
+	opacity: 0.6 !important;
+}
+
+.tabmail-tab[selected="true"] .tab-content{
+	background: -moz-dialog !important;
+	background-color: rgba(214, 214, 224, 1.0) !important;
+}
+
+.tabmail-tab .tab-background[selected=true], .tabmail-tab:hover .tab-background {
+    margin-left: -1px !important;
+    margin-right: -1px !important;
+    border-top: 1px solid var(--tab-highlight-color) !important;
+    border-left: 1px solid var(--tab-highlight-color) !important;
+    border-right: 1px solid var(--tab-highlight-color) !important;
+    border-radius: 5px 5px 0px 0px !important;
+}
+
+/* Remove the vertical lines between background tabs */
+.tabmail-tab::before , .tabmail-tab::after {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.tabmail-tab[selected="true"] .tab-background .tab-line, .tabmail-tab:hover .tab-background .tab-line {
+	background-color: var(--tab-highlight-color) !important;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.tabmail-tab .tab-content {
+	padding-bottom: 3px !important;
+	margin-top: 3px !important;
+}
+
+.tabmail-tab .tab-text {
+	color: var(--menu-text-color) !important;
+}
+
+.tabmail-tab .tab-label-container {
+	border: none !important;
+}
+
+/*  
+ Version for Firefox placed simply in ~yourProfile~/chrome/userChrome.css with toolkit.legacyUserProfileCustomizations.stylesheets set in configuration ( about:config )
+ 
+ Fix the comments before using of course!
+ 
+ :root {
+--tab-highlight-color: #2377ff;
+}
+
+.tabbrowser-tab .tab-background {
+    opacity: 0.6 !important;
+}
+
+/* Curve active tab and slightly overlap neighboring tabs
+.tabbrowser-tab .tab-background[selected="true"], .tabbrowser-tab:hover .tab-background {
+  margin-left: -1px !important;
+  margin-right: -1px !important;
+  border-radius: 5px 5px 0px 0px !important;
+  border-top: 1px solid var(--tab-highlight-color) !important;
+  border-left: 1px solid var(--tab-highlight-color) !important;
+  border-right: 1px solid var(--tab-highlight-color) !important;
+}
+
+.tabbrowser-tab .tab-background .tab-line {
+	background-color: var(--tab-highlight-color) !important;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+/* Shorten the vertical lines between background tabs avoiding curved top
+.tabbrowser-tab::before, .tabbrowser-tab::after {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+*/
+
+
+
